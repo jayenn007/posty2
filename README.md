@@ -9,7 +9,7 @@
 
 ## Learning Laravel 8.0
 
-This is my implementation following along a very nice youtube Laravel crash course by Alex Garrett-Smith (Alex Garrett-Smith (@alexjgarrett))
+This is my implementation following along a very nice youtube Laravel crash course by Alex Garrett-Smith (Twitter: @alexjgarrett)
 
 Laravel Crash Course 2020: https://www.youtube.com/watch?v=MFh0Fd7BsjE
 
