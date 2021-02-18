@@ -7,11 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Learning Laravel
+## Learning Laravel 8.0
 
-This is my implementation following along a very nice youtube Laravel crash course by Alex Garrett-Smith
+This is my implementation following along a very nice youtube Laravel crash course by Alex Garrett-Smith (Alex Garrett-Smith (@alexjgarrett))
 
-Alex Garrett-Smith (@alexjgarrett)
-https://www.youtube.com/watch?v=MFh0Fd7BsjE
+Laravel Crash Course 2020: https://www.youtube.com/watch?v=MFh0Fd7BsjE
 
 This is not exactly the same, but follows the content in broad strokes
