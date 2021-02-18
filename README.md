@@ -13,4 +13,5 @@ This is my implementation following along a very nice youtube Laravel crash cour
 
 Laravel Crash Course 2020: https://www.youtube.com/watch?v=MFh0Fd7BsjE
 
-This is not exactly the same, but follows the content in broad strokes
+This is not yet done - I am right in the middle (2-18-2021)
+Not exactly the same code, but follows the content in broad strokes
