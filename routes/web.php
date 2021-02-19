@@ -1,8 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\auth\LoginController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 
 
@@ -26,6 +29,14 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'signin']);
 
+Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
+
+
+
+
+Route::get('/home', function () {
+    return view('home');
+});
 Route::get('/', function () {
-    return view('posts.index');
+    return view('home');
 });
