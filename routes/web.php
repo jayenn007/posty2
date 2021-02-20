@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
@@ -30,6 +31,10 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'signin']);
 
 Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
+
+
+Route::get('/post', [PostController::class, 'index'])->name('posts');
+Route::post('/post', [PostController::class, 'store']);
 
 
 
