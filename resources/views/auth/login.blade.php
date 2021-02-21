@@ -17,26 +17,27 @@
 
                     <form action="{{ route('login') }}" method="post" >
                     @csrf
-                    
+
                     <div>
-                        <input 
+                        <input
                             type="text"
                             class="block border border-grey-light w-full p-3 rounded mb-4"
                             name="email"
-                            value="{{ old('name') }}"
-                            placeholder="Email" />
+                            value="{{ old('email') }}"
+                            placeholder="Email"/>
+
 
                             @error('email')
                                 <div class="text-red-500 mb-2 text-sm">
                                     {{ $message }}
-                                
+
                                 </div>
                             @enderror
 
 
                     </div>
 
-                    <input 
+                    <input
                         type="password"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
                         name="password"
@@ -48,7 +49,7 @@
                             </label>
                         </div>
 
-                    
+
                     <button
                         type="submit"
                         class="w-full border text-white text-center py-3 rounded bg-blue-400 text-blue hover:bg-blue-500 focus:bg-blue-700 outline-none my-1"
@@ -57,6 +58,6 @@
                 </div>
             </div>
         </div>
-   
+
    </div>
 @endsection

@@ -9,39 +9,41 @@
                     <form action="{{ route('register') }}" method="post" >
                     @csrf
                     <div>
-                        <input 
+                        <input
                             type="text"
                             class="block border border-grey-light w-full p-3 rounded mb-4 @error('name') border-red-500 @enderror"
                             name="name"
-                            placeholder="Full Name" 
+                            placeholder="Full Name"
                             value="{{ old('name') }}" />
 
                             @error('name')
                                 <div class="text-red-500 mb-2 text-sm">
                                     {{ $message }}
-                                
+
                                 </div>
                             @enderror
                     </div>
 
-                    <input 
+                    <input
                         type="text"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
                         name="username"
+                        value="{{ old('username') }}"
                         placeholder="Username" />
 
-                    <input 
+                    <input
                         type="text"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
                         name="email"
+                        value="{{ old('email') }}"
                         placeholder="Email" />
 
-                    <input 
+                    <input
                         type="password"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
                         name="password"
                         placeholder="Password" />
-                    <input 
+                    <input
                         type="password"
                         class="block border border-grey-light w-full p-3 rounded mb-4"
                         name="password_confirmation"
@@ -55,6 +57,6 @@
                 </div>
             </div>
         </div>
-   
+
    </div>
 @endsection
